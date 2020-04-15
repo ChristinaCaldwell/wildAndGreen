@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Christina Caldwell">
+    <title>Wild and Green Flower Farm</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS bootstrap only used for grid-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--    my Css-->
+    <link rel="stylesheet" href="css/mystyle.css">
+<!--    social media icons from fontawesome-->
+    <script src="https://kit.fontawesome.com/2b85db5d54.js" crossorigin="anonymous"></script>
+<!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Load Leaflet from CDN interactive map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+    crossorigin=""></script>
+    <!-- Load Esri Leaflet from CDN map style-->
+    <script src="https://unpkg.com/esri-leaflet@2.1.1/dist/esri-leaflet.js"
+    integrity="sha512-ECQqaYZke9cSdqlFG08zSkudgrdF6I1d8ViSa7I3VIszJyVqw4ng1G8sehEXlumdMnFYfzY0tMgdQa4WCs9IUw=="
+    crossorigin=""></script>
+<!--    jQuery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="main-header">
+<!--Desktop Navigation menu-->
+    <div class="navigation-bar">
+      <ul>
+         <a href="#about-us" class="navigation-link">About Us</a>
+         <a href="#wedding-head" class="navigation-link">Weddings</a>
+         <a href="#find-us" class="navigation-link">Find Us</a>
+         <a href="#contact-us"class="navigation-link">Contact Us</a>
+      </ul>
+    </div> 
+<!--hamburger menu-->
+    <div id="hamburger-menu">
+         <div class="icons">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+        <div class="mobile-navigation-bar">
+            <ul>
+                <a href="#about-us">
+                    <li>About Us</li>
+                </a>
+                <a href="#wedding-head">
+                    <li>Weddings</li>
+                </a>
+                <a href="#find-us">
+                    <li>Find Us</li>
+                </a>
+                <a href="#contact-us">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+      </div>
+      <h1>Wild and Green Flower Farm</h1>
+      <p id="title-text">Local. Unique. Sustainable</p>
+  </div>
+  <div id="about-us">
+     <h2>About Us</h2>
+      <p>We are a family owned flower farm based in rural Moyvalley, Co. Kildare. All flowers are grown on site and sold at the farmgate from Spring 2020. It is our aim to provide a sustainable, locally grown product for our value customers.</p>
+  </div>
+<section class="container" id="our-photos">
+      <div class="row">
+          <div class="col-12 col-lg-4">
+                <div class="image">
+                    <img src="images/purpleFlower_opt.jpg" class="img-fluid" alt="Field with yellow and purple flowers with sunset in background">
+                </div>
+                <div class="photo-text">
+                    <h4>Local</h4>
+                    <p>All our flowers are grown on-site and have zero air miles</p>
+                </div>
+          </div>
+          <div class="col-12 col-lg-4">
+                <div class="image">
+                    <img src="images/bouquet_opt.jpg" class="img-fluid" alt="Hand holding spring bouquet against wooden backdrop">
+                </div>
+                <div class="photo-text">
+                    <h4>Unique</h4>
+                    <p>We are passionate about growing speciality flowers and designing with them</p>
+                </div>
+          </div>
+          <div class="col-12 col-lg-4">
+              <div class="image">
+                  <img src="images/beePurple_opt.jpg" class="img-fluid" alt="Bumble bee and purple flowers">
+              </div>
+                <div class="photo-text">
+                    <h4>Sustainable</h4>
+                    <p>We want to contribute to the health of our planet, not deplete it.</p>
+                </div>
+          </div>
+      </div>
+</section>
+  <section id="wedding-head" class="black-section">
+      <h2>Now taking bookings for 2020 Weddings</h2>
+      <p id="wedding-text">With tailored packages available for every budget. We can provide and arrange all or some of your flowers for your wedding, giving you a seasonal fresh product. Your florist and supplier in one. Check out the gallery below to see the  2019 July wedding that we provided all of the flowers for.</p>
+<!--      <button href="#contact-us" class="button">Contact us</button>-->
+      <a href="#contact-us" class="contact-button">Contact us</a>
+  </section>
+  <section class="image-gallery">
+     <div class="container">
+         <div class="row">
+            <div class="col-12 col-lg-6">
+                  <img src="images/buttonholes1_opt.jpg" class="img-fluid" alt="Wedding button holes on wooden table">
+            </div>
+            <div class="col-12 col-lg-6">
+                  <img src="images/caketable_opt.jpg" class="img-fluid" alt="Wedding cake table with flowers">
+            </div>
+            <div class="col-12 col-lg-8">
+                  <img src="images/signingregistar_opt.jpg" class="img-fluid" alt="Bride and groom signing register, flowers in background">
+            </div>
+            <div class="col-12 col-lg-4">
+                  <img src="images/weddingbouquet_opt.jpg" class="img-fluid" alt="Wedding bouquet">
+            </div>
+            <div class="col-6" id="hidden-mobile">
+                  <img src="images/buttonholes2_opt.jpg"  class="img-fluid" alt="Wedding button holes">
+            </div>
+            <div class="col-6 " id="hidden-mobile">
+                  <img src="images/flowerswindow_opt.jpg" class="img-fluid" alt="Wild flowers arranged in window">
+            </div>
+         </div>
+     </div>
+  </section>
+  <div>
+      <h2 id="find-us">Find Us</h2>
+<!--      This is the interactive map-->
+      <div class=container>
+          <div class="row">
+              <div class="col-9" id="map"></div>
+              <div class="col-3">
+                  <p id="address"><b>Address:</b> Broadford, Moyvalley, Co. Kildare, W91 K389</p>
+                  <p><b>Phone</b>:+353 (0)87 6272670</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="contact-us">
+      <h2>Contact us</h2>
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <textarea rows="4" cols="50" name="comment">
+        Enter your message here...</textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  <footer>
+     <div class="social-media">
+         <a href="https://www.instagram.com/wildandgreenflowers">
+             <span id="social-media-icons" class="fab fa-instagram"></span>
+         </a>
+         <a href="https://www.facebook.com/Wild-Green-Flower-Farm-100101934729385">
+             <span id="social-media" class="fab fa-facebook"></span>
+         </a>
+<!--              <i id="social-media" class="far fa-envelope"></i>-->
+      </div>
+      <p id="title-text">Local.Unique.Sustainable</p>
+      <p>Website designed and written by Christina Caldwell ©2020</p>
+  </footer>
+  
+<!--  my javascript links-->
+<script src="javascript/map.js"></script>
+<script src="javascript/hamburger.js"></script>
+<script src="javascript/form.js"></script>
+  </body>
+</html>

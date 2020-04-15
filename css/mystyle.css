@@ -1,0 +1,242 @@
+body{
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tajawal', Bold 700;
+}
+h1{
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.main-header{
+  background-color: black;
+  color: whitesmoke;
+}
+/*remove all padding from bootstrap cols*/
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.black-section{
+    color:whitesmoke;
+    padding:4rem;
+    background-color: black;
+/*
+    background-image: linear-gradient(rgba(0, 0, 1, 0.5), rgba(1, 1, 0, 0.5)),url("cherryBlossom.jpg");
+    filter: brightness(70%);
+*/
+}
+.img-fluid{
+    height: 400px;
+}
+.photo-text{
+    padding:25px;
+}
+/*custom button*/
+.contact-button {
+  background-color: black;
+  border: 2px solid;
+  border-width: thick;
+  border-color: whitesmoke;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact-button:hover{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+}
+/*
+main navigation
+*/
+.navigation-bar{
+    padding: 0 0 3rem;
+    text-align: right;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+a{
+    color:whitesmoke;
+}
+a:hover{
+    color: whitesmoke;
+}
+
+.navigation-link{
+    padding: 0 18px;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.navigation-link:hover{
+    color: lightgray;
+    text-decoration: none;
+}
+/*mobile hamburger menu*/
+/*modified from https://codepen.io/g13nn/pen/eHGEF*/
+
+.icons {
+	width: 100%;
+	background: black;
+	height: 60px;
+	line-height: 60px;
+}
+.hamburger {
+	background: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 45px;
+	padding: 5px 15px 0px 15px;
+	color: #999;
+	border: 0;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+.cross {
+	background: none;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	padding: 7px 15px 0px 15px;
+	color: #999;
+	border: 0;
+	font-size: 3em;
+	line-height: 65px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+.mobile-navigation-bar {
+	z-index: 1000000;
+	font-weight: bold;
+	font-size: 0.8em;
+	width: 70%;
+	background-color:whitesmoke;
+	text-align: center;
+}
+.mobile-navigation-bar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+.mobile-navigation-bar li {
+	display: block;
+	padding: 15px 0 15px 0;
+	border-bottom: #dddddd 1px solid;
+}
+.mobile-navigation-bar li:hover {
+	display: block;
+	background: #ffffff;
+	padding: 15px 0 15px 0;
+	border-bottom: #dddddd 1px solid;
+}
+.mobile-navigation-bar ul li a {
+	text-decoration: none;
+	margin: 0px;
+	color: #666;
+}
+.mobile-navigation-bar ul li a:hover {
+	color: #666;
+	text-decoration: none;
+}
+.mobile-navigation-bar a {
+	text-decoration: none;
+	color: #666;
+}
+.mobile-navigation-bar a:hover {
+	text-decoration: none;
+	color: #666;
+}
+
+.social-media{
+    padding: 2rem 0 1rem;
+}
+#social-media-icons{
+    margin: 12px;
+}
+
+#title-text{
+    font-size: 4rem;
+    padding-bottom: 2rem; 
+}
+#about-us{
+    padding: 3rem 4rem;
+}
+#wedding-text{
+    padding: 2rem 4rem;
+}
+
+#our-photos{
+/*    background-color: yellowgreen;*/
+}
+
+#find-us{
+    padding: 3rem 0 2rem;
+}
+#contact-us{
+    padding: 3rem 0;
+}
+
+#address{
+    padding-top: 10rem;
+}
+/* hide some photos for mobile phone and ipad
+to minimise scrolling*/
+@media only screen and
+(max-device-width : 768px){
+#hidden-mobile{
+    display: none;
+}
+}
+/*hide hamburger menu above ipad*/
+@media only screen and (min-device-width : 769px){
+    #hamburger-menu{
+        display: none;
+}
+}
+/*change desktop nav menu to hamburger menu just before ipad size*/
+@media only screen and (max-device-width : 768px){
+    .navigation-bar{
+        display: none;
+}
+}
+
+
+/* map for mobile*/
+/*
+#map {
+    height: 350px;
+    margin: 12px 48px;
+}
+@media only screen and (min-width: 1024px) {
+*/
+    /* For desktop: */
+#map {height: 450px;}
+
+
+
+
+
