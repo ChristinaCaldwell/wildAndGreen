@@ -171,6 +171,12 @@ a:hover{
 	color: #666;
 }
 
+.title-text{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    max-width: 900px;
+    margin:0 auto;
+}
 .social-media{
     padding: 2rem 0 1rem;
 }
@@ -178,10 +184,7 @@ a:hover{
     margin: 12px;
 }
 
-#title-text{
-    font-size: 4rem;
-    padding-bottom: 2rem; 
-}
+
 #about-us{
     padding: 3rem 4rem;
 }
@@ -223,17 +226,7 @@ to minimise scrolling*/
         display: none;
 }
 }
-
-
-/* map for mobile*/
-/*
-#map {
-    height: 350px;
-    margin: 12px 48px;
-}
-@media only screen and (min-width: 1024px) {
-*/
-    /* For desktop: */
+/* Set height */
 #map {height: 450px;}
 
 
