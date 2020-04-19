@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="author" content="Christina Caldwell">
     <title>Wild and Green Flower Farm</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--       CSS bootstrap only used for grid-->
+   <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!--    my Css-->
     <link rel="stylesheet" href="css/mystyle.css">
@@ -62,32 +63,33 @@
         </div>
       </div>
       <h1>Wild and Green Flower Farm</h1>
-      <p class="title-text">Local. Unique. Sustainable</p>
+      <p class="title-text">Seasonal. Local. Sustainable</p>
   </div>
   <div id="about-us">
      <h2>About Us</h2>
-      <p>We are a family owned flower farm based in rural Moyvalley, Co. Kildare. All flowers are grown on site and sold at the farmgate from Spring 2020. It is our aim to provide a sustainable, locally grown product for our value customers.</p>
+      <p>We are a family owned flower farm based in rural Moyvalley, Co. Kildare. All flowers are grown on site and sold at the farmgate from Spring 2020. It is our aim to provide a sustainable, locally grown product for our valued customers.</p>
   </div>
 <section class="container" id="our-photos">
       <div class="row">
           <div class="col-12 col-lg-4">
                 <div class="image">
-                    <img src="images/purpleFlower_opt.jpg" class="img-fluid" alt="Field with yellow and purple flowers with sunset in background">
+                    <img src="images/purpleFlower_opt.jpg" class="img-fluid" alt="Hand holding spring bouquet against wooden backdrop">
+                </div>
+                <div class="photo-text">
+                    <h4>Seasonal</h4>
+                    <p>We are passionate about growing speciality flowers and designing with them</p>
+                </div>
+          </div>
+          <div class="col-12 col-lg-4">
+                <div class="image">
+                    <img src="images/bouquet_opt.jpg" class="img-fluid" alt="Field with yellow and purple flowers with sunset in background">
                 </div>
                 <div class="photo-text">
                     <h4>Local</h4>
                     <p>All our flowers are grown on-site and have zero air miles</p>
                 </div>
           </div>
-          <div class="col-12 col-lg-4">
-                <div class="image">
-                    <img src="images/bouquet_opt.jpg" class="img-fluid" alt="Hand holding spring bouquet against wooden backdrop">
-                </div>
-                <div class="photo-text">
-                    <h4>Unique</h4>
-                    <p>We are passionate about growing speciality flowers and designing with them</p>
-                </div>
-          </div>
+
           <div class="col-12 col-lg-4">
               <div class="image">
                   <img src="images/beePurple_opt.jpg" class="img-fluid" alt="Bumble bee and purple flowers">
@@ -102,7 +104,6 @@
   <section id="wedding-head" class="black-section">
       <h2>Now taking bookings for 2020 Weddings</h2>
       <p id="wedding-text">With tailored packages available for every budget. We can provide and arrange all or some of your flowers for your wedding, giving you a seasonal fresh product. Your florist and supplier in one. Check out the gallery below to see the  2019 July wedding that we provided all of the flowers for.</p>
-<!--      <button href="#contact-us" class="button">Contact us</button>-->
       <a href="#contact-us" class="contact-button">Contact us</a>
   </section>
   <section class="image-gallery">
@@ -129,7 +130,7 @@
          </div>
      </div>
   </section>
-  <div>
+  <section>
       <h2 id="find-us">Find Us</h2>
 <!--      This is the interactive map-->
       <div class=container>
@@ -141,18 +142,38 @@
               </div>
           </div>
       </div>
-  </div>
-  <div id="contact-us">
-      <h2>Contact us</h2>
-      <form name="myForm" onsubmit="return validateForm()" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <textarea rows="4" cols="50" name="comment">
-        Enter your message here...</textarea><br><br>
-        <button type="submit">Submit</button>
-      </form>
+  </section>
+  <div class="container" id="contact-us">
+     <div class="row">
+<!--     form is over 8 bootstrap colums and offset 2 columns each side-->
+     <div class="col-md-8 offset-md-2">
+          <h2>Contact us</h2>
+          <form name="myForm" onsubmit="return validateForm()" method="post" action="mailto:lindakatie@gmail.com" enctype="text/plain">
+            <label class="bold-text" for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label class="bold-text" for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <textarea rows="4" cols="35" name="comment">
+            Enter your message here...</textarea><br><br>
+            <p class="bold-text">Please state you main enquiry:</p>
+    <!--       checkboxes only appears when wedding radio button is checked-->
+           <input type="checkbox" id="wedding" name="category1" value="Wedding">
+            <label for="wedding"> A wedding enquiry</label><br>
+            <input type="checkbox" id="delivery" name="category2" value="Delivery">
+            <label for="delivery">Arrange  flower delivery</label><br>
+            <input type="checkbox" id="collection" name="category3" value="Collection">
+            <label for="collection"> Arrange a flower delivery</label><br>
+            <p class="bold-text">What best describes the service you want?</p>
+            <input type="radio" id="flowers" name="service" value="flowers">
+            <label for="flowers">Flowers Only</label><br>
+            <input type="radio" id="floristry" name="service" value="floristry">
+            <label for="floristry">Full floristry service</label><br>
+            <input type="radio" id="other" name="service" value="other">
+            <label for="other">Other</label><br><br>
+            <button type="submit">Submit</button>
+          </form>
+         </div>
+      </div>
     </div>
   <footer>
      <div class="social-media">
@@ -166,13 +187,13 @@
              <i id="social-media-icons" class="far fa-envelope"></i>
          </a> 
       </div>
-      <p class="title-text">Local. Unique. Sustainable</p>
+      <p class="title-text">Seasonal. Local. Sustainable</p>
       <p>Website designed and written by Christina Caldwell ©2020</p>
   </footer>
   
-<!--  my javascript links-->
-<script src="javascript/map.js"></script>
-<script src="javascript/hamburger.js"></script>
-<script src="javascript/form.js"></script>
+    <!--  my javascript links-->
+    <script src="javascript/map.js"></script>
+    <script src="javascript/hamburger.js"></script>
+    <script src="javascript/form.js"></script>
   </body>
 </html>

@@ -15,6 +15,9 @@ footer{
     background-color: black;
     color: whitesmoke;
 }
+.bold-text{
+    font-weight: bold;
+}
 
 .main-header{
   background-color: black;
@@ -37,6 +40,7 @@ footer{
 }
 .img-fluid{
     height: 400px;
+    max-width: 100%;
 }
 .photo-text{
     padding:25px;
@@ -174,9 +178,11 @@ a:hover{
 .title-text{
     font-size: 4rem;
     padding-bottom: 2rem;
-    max-width: 900px;
+    max-width: 15em;
     margin:0 auto;
 }
+
+
 .social-media{
     padding: 2rem 0 1rem;
 }
