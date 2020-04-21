@@ -208,10 +208,11 @@ a:hover{
 #contact-us{
     padding: 3rem 0;
 }
-
 #address{
-    padding-top: 10rem;
+    padding-top: 3rem;
 }
+
+
 /* hide some photos for mobile phone and ipad
 to minimise scrolling*/
 @media only screen and
@@ -232,8 +233,15 @@ to minimise scrolling*/
         display: none;
 }
 }
-/* Set height */
-#map {height: 450px;}
+/* map for mobile*/
+#map {
+    height: 350px;
+    margin:0px 2rem;
+}
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    #map {height: 450px;}
+
 
 
 

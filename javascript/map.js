@@ -6,8 +6,16 @@ var map = L.map('map',{
     zoom: 12,
 });
 //add ESRI basemap
-L.esri.basemapLayer('DarkGray').addTo(map);
+var darkgrey=L.esri.basemapLayer('DarkGray').addTo(map);
+var streets=L.esri.basemapLayer('Streets');
 
 L.marker([53.441001, -6.962733]).addTo(map).bindPopup("<strong>Flower Farm Location</strong><br>Wild and Green Flower Farm").openPopup();
+
+var baseLayers = {
+		"Dark grey": darkgrey,
+		"Streets": streets
+};
+
+L.control.layers(baseLayers).addTo(map);
 
 
